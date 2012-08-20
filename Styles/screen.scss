@@ -29,7 +29,7 @@
 @include removeSelectorForKey('#interestsNav', 'hide_interests_menu');
 
 @include removeSelectorForKey('#pagelet_ego_pane_w, #pagelet_ego_pane, #pagelet_side_ads', 'hide_adverts');
-@include removeSelectorForKey('#pagelet_reminders', 'hide_reminders');
+@include removeSelectorForKey('.fbReminders', 'hide_reminders');
 
 @include removeSelectorForKey('#pagelet_chat, #pagelet_friends_online', 'hide_chat');
 @include removeSelectorForKey('#fbTranslationsNub', 'hide_translations');

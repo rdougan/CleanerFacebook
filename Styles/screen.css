@@ -47,7 +47,7 @@ html.hide_adverts #pagelet_ego_pane_w, #pagelet_ego_pane, #pagelet_side_ads {
 }
 
 /* line 13, screen.scss */
-html.hide_reminders #pagelet_reminders {
+html.hide_reminders .fbReminders {
   display: none !important;
 }
 
