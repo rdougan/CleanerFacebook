@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script type="text/javascript">
+
+        var allowedKeys = [
+            'hide_groups_menu',
+            'hide_friend_groups_menu',
+            'hide_apps_menu',
+            'hide_adverts_menu',
+            'hide_pages_menu',
+            'hide_interests_menu',
+            
+            'hide_adverts',
+            'hide_reminders',
+
+            'hide_chat',
+            'hide_translations',
+        ];
+
+        // Listen for setting changes
+
+        var settingChanged = function(e) {
+            if (allowedKeys.indexOf(e.key) != -1) {
+                safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("setting", {
+                    key: e.key,
+                    value: e.newValue
+                });
+            }
+        }
+
+        safari.extension.settings.addEventListener("change", settingChanged, false);
+
+        // Handle initial fetching of settings
+
+        function handleMessage(event) {
+            switch (event.name) {
+                case 'fetchSettings': {
+                    // loop through keys and fire the event
+                    var ln = allowedKeys.length,
+                        key;
+
+                    for (i = 0; i < ln; i++) {
+                        key = allowedKeys[i];
+                        console.log(key, safari.extension.settings[key]);
+                        safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("setting", {
+                            key: key,
+                            value: safari.extension.settings[key]
+                        });
+                    }
+
+                    break;
+                }
+            }
+        }
+        
+        safari.application.addEventListener("message", handleMessage, false);
+     
+       </script>
+    </head>
+    <body></body>
+</html>

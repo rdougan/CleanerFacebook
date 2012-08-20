@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Title</key>
+		<string>Left Navigation</string>
+		<key>Type</key>
+		<string>Group</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>hide_groups_menu</string>
+		<key>Title</key>
+		<string>Hide Groups Menu</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>hide_friend_groups_menu</string>
+		<key>Title</key>
+		<string>Hide Friend Lists Menu</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>hide_apps_menu</string>
+		<key>Title</key>
+		<string>Hide Applications Menu</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>hide_adverts_menu</string>
+		<key>Title</key>
+		<string>Hide Adverts Menu</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>hide_pages_menu</string>
+		<key>Title</key>
+		<string>Hide Pages Menu</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>hide_interests_menu</string>
+		<key>Title</key>
+		<string>Hide Interests Menu</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+
+	<dict>
+		<key>Title</key>
+		<string>Right Navigation</string>
+		<key>Type</key>
+		<string>Group</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>hide_reminders</string>
+		<key>Title</key>
+		<string>Hide Reminders</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>hide_adverts</string>
+		<key>Title</key>
+		<string>Hide Advertisements</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+
+	<dict>
+		<key>Title</key>
+		<string>Footer</string>
+		<key>Type</key>
+		<string>Group</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>hide_chat</string>
+		<key>Title</key>
+		<string>Hide Chat</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
+		<string>hide_translations</string>
+		<key>Title</key>
+		<string>Hide Translations</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,35 @@
+// Retina logo
+#pageLogo a {
+    background-image: inline-image('logo.png') !important;
+    background-position: top left !important;
+    background-size: auto auto !important;
+    background-size: 103px 31px !important;
+} 
+
+// Mixin for removing elements
+@mixin removeSelectorForKey($selectors, $key) {
+    @each $selector in $selectors {
+        @if $key != null {
+            html.#{$key} #{$selector} { display: none !important; }
+        } @else {
+            #{$selector} { display: none !important; }
+        }
+    }
+}
+
+// Hide the footer
+@include removeSelectorForKey('#pagelet_rhc_footer', null);
+
+// Settings
+@include removeSelectorForKey('#groupsNav', 'hide_groups_menu');
+@include removeSelectorForKey('#listsNav', 'hide_friend_groups_menu');
+@include removeSelectorForKey('#appsNav', 'hide_apps_menu');
+@include removeSelectorForKey('#adsNav', 'hide_adverts_menu');
+@include removeSelectorForKey('#pagesNav', 'hide_pages_menu');
+@include removeSelectorForKey('#interestsNav', 'hide_interests_menu');
+
+@include removeSelectorForKey('#pagelet_ego_pane_w, #pagelet_ego_pane, #pagelet_side_ads', 'hide_adverts');
+@include removeSelectorForKey('#pagelet_reminders', 'hide_reminders');
+
+@include removeSelectorForKey('#pagelet_chat, #pagelet_friends_online', 'hide_chat');
+@include removeSelectorForKey('#fbTranslationsNub', 'hide_translations');
