@@ -20,3 +20,13 @@ You can download the latest version from the [repository download page](https://
     - Advertisements
     - Chat
     - Translations
+
+## Preview
+
+Before:
+
+![Before](http://rwd.me/IsTk/Screen%20Shot%202012-08-20%20at%202.39.35%20PM.png)
+
+After:
+
+![After](http://rwd.me/IsO4/Screen%20Shot%202012-08-20%20at%202.39.41%20PM.png)
